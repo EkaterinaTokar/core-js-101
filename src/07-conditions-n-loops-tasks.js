@@ -81,7 +81,7 @@ function getSumBetweenNumbers(n1, n2) {
  * @param {number} a
  * @param {number} b
  * @param {number} c
- * @return {bool}
+ * @return {boolean}
  *
  * @example:
  *   1,2,3    =>  false
@@ -90,10 +90,7 @@ function getSumBetweenNumbers(n1, n2) {
  *   10,10,10 =>  true
  */
 function isTriangle(a, b, c) {
-  if (a + b > c && a + c > b && c + b > a) {
-    return true;
-  }
-  return false;
+  return (a + b > c) && (a + c > b) && (c + b > a);
 }
 
 
@@ -368,10 +365,7 @@ function isBracketsBalanced(str) {
       i = -1;
     }
   }
-  if (str.length === 0) {
-    return true;
-  }
-  return false;
+  return str.length === 0;
 }
 
 
@@ -425,8 +419,7 @@ function getCommonDirectoryPath(pathes) {
     firstElement.splice(j);
   }
   if (firstElement.length > 0) {
-    const commonPath = `${firstElement.join('/')}/`;
-    return commonPath;
+    return `${firstElement.join('/')}/`;
   }
   return `${firstElement.join('/')}`;
 }
