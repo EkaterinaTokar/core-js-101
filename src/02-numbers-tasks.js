@@ -44,7 +44,7 @@ function getCircleCircumference(radius) {
  *
  * @param {number} value1
  * @param {number} value2
- * @return {bigint}
+ *@return {bigint}
  *
  * @example:
  *   5, 5  => 5

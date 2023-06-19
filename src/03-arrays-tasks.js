@@ -202,10 +202,7 @@ function getTail(arr, n) {
  *    +'30,31,32,33,34'
  */
 function toCsvText(arr) {
-  return arr.map((item) => {
-    const row = item;
-    return row.join(',');
-  })
+  return arr.map((item) => item.join(','))
     .join('\n');
 }
 
@@ -242,11 +239,10 @@ function toArrayOfSquares(arr) {
  */
 function getMovingSum(arr) {
   let sum = 0;
-  const newArr = arr.map((el) => {
+  return arr.map((el) => {
     sum += el;
     return sum;
   });
-  return newArr;
 }
 
 /**
